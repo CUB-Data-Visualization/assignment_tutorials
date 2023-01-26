@@ -156,7 +156,7 @@ Here is a list of some handy comparison operators and their syntax:
 
 -   Is NOT equal to: `!=`
 
-Comparison operators compare the value on the left with the value on the right. It can be helpful to think of comparison statements as questions. When the answer is \"yes\", the statement evaluates to `TRUE`, and when the answer is \"no\", the statement evaluates to `FALSE`. Example:
+Comparison operators compare the value on the left with the value on the right. It can be helpful to think of comparison statements as questions. When the answer is "yes", the statement evaluates to `TRUE`, and when the answer is "no", the statement evaluates to `FALSE`. Example:
 
 ```{r}
 # Question: is 10 smaller than 12?
@@ -322,11 +322,11 @@ if (!any(letters == "a")) {
 
 # Functions
 
-Functions are actions we can perform. R provides a number of functions, and you\'ve actually been using a few of them even though you maybe didn\'t realize!
+Functions are actions we can perform. R provides a number of functions, and you've actually been using a few of them even though you maybe didn't realize!
 
 We *call*, or use, these functions by stating the name of the function and following it with an opening and closing parentheses: ie. `function_name()`. In addition, between the parenthesis, we usually pass in an *argument*, or a value that the function uses to conduct an action, i.e. `function_name(value)`.
 
-Does that syntax look a little familiar? We already used several functions including the combine `c()` (to make a vector), `all()` and `any()` functions! Let\'s see some more functions in action!
+Does that syntax look a little familiar? We already used several functions including the combine `c()` (to make a vector), `all()` and `any()` functions! Let's see some more functions in action!
 
 ```{r}
 sort(c(2,4,10,5,1))
@@ -348,7 +348,7 @@ Understanding how to call a function and what arguments it needs is a fundamenta
 
 ```
 
-Let\'s practice calling another useful function!
+Let's practice calling another useful function!
 
 > Task: the `unique()` function takes a vector argument and returns a vector with only the unique elements in that vector (removing all duplicates).
 >
@@ -366,15 +366,15 @@ data <- c(120,22,22,31,15,120)
 
 # **Importing Packages**
 
-R\'s popularity is also largely due to the many fantastic packages available in the language! A package is a bundle of code that makes coding certain tasks easier. There are all sorts of packages for all sorts of purposes, ranging from visualizing and cleaning data, to ordering pizza or posting a tweet. In fact, most scientists use packages when they code. This is why you might hear them differentiate packages from \"Base R.\" Base R refers the R language by itself and all that it can do without importing any packages.
+R's popularity is also largely due to the many fantastic packages available in the language! A package is a bundle of code that makes coding certain tasks easier. There are all sorts of packages for all sorts of purposes, ranging from visualizing and cleaning data, to ordering pizza or posting a tweet. In fact, most scientists use packages when they code. This is why you might hear them differentiate packages from "Base R." Base R refers the R language by itself and all that it can do without importing any packages.
 
-Although base R has some useful features, most of the time you\'ll want to import a package to make your life easier. You only need to run this command the first time you install a package, after that there is no need to run it (you might remember doing this for a few packages when first installing R on your computer):
+Although base R has some useful features, most of the time you'll want to import a package to make your life easier. You only need to run this command the first time you install a package, after that there is no need to run it (you might remember doing this for a few packages when first installing R on your computer):
 
 ```{r, eval=FALSE}
 install.packages("package-name")
 ```
 
-In this lesson, we coded in base R but let\'s practice importing one of the most popular R packages: `dplyr`. This is a package used to clean, process, and organize data which you will use as you learn about R. To import a package you simply type `library(package-name)` (without `" "` quotes)
+In this lesson, we coded in base R but let's practice importing one of the most popular R packages: `dplyr`. This is a package used to clean, process, and organize data which you will use as you learn about R. To import a package you simply type `library(package-name)` (without `" "` quotes)
 
 > Task: the following code throws an error because it uses the `dplyr` and `readr` packages without importing both. Import the `dplyr` and `readr` packages by using the `library()` function and then press run so that you can observe the packages do their magic! We'll dive more into these wonderful packages soon.
 
