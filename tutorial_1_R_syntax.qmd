@@ -389,8 +389,8 @@ artists <- read_csv("data/artists.csv", show_col_types = FALSE)
 artists
 
 # filter and sort data
-artists %>%
-  select(-country,-year_founded,-albums) %>%
-  filter(spotify_monthly_listeners > 20000000, genre != 'Hip Hop') %>%
+artists |>
+  select(-country,-year_founded,-albums) |>
+  filter(spotify_monthly_listeners > 20000000, genre != 'Hip Hop') |>
   arrange(desc(youtube_subscribers))
 ```

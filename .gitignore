@@ -13,6 +13,9 @@
 *.xlsx
 *.csv
 
+# explicitly allow data files (by default)
+!data/**/*
+
 # OS generated files
 .DS_Store
 .DS_Store?
@@ -41,9 +44,6 @@ packrat/src/
 
 # exclude authentication tokens
 .httr-oauth
-
-# explicitly allow all files in data (by default)
-!data/**/*
 
 # exclude cache
 *cache/**/*
